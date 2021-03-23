@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Afonso Colaço">
+        <meta name="keywords" content="Bangkok">
+        <meta name="description" content="Website sobre Bangkok">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Bangkok</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="estilos.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <style>
+            h1{
+                font-family: "Nunito";
+            }
+            nav{
+                font-family: "Roboto";
+            }
+            main{
+                font-family: "Nunito";
+            }
+            footer{
+                font-family: "Roboto";
+            }
+            .flex-nav {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .item1 {grid-area: header;}
+            .item2 {grid-area: nav;}
+            .item3 {grid-area: main;}
+            .item4 {grid-area: aside;}
+            .item5 {grid-area: aside2}
+            .item6 {grid-area: footer}
+            .grid-container {
+              display: grid;
+              grid-template-areas: 
+              'header header header'
+              'nav nav nav'
+              'main main main'
+              'aside aside2 footer';
+              grid-gap: 5px;
+              background-color: lightblue;
+              padding: 10px;
+            }
+            .item1 {
+              background-color: lightblue;
+              text-align: center;
+              padding: 20px 0;
+            }
+            .item2{
+              background-color: lightblue;
+              text-align: center;
+              padding: 20px 0;
+            }
+            .item3{
+              background-color: lightblue;
+              text-align: center;
+              padding: 20px 0;
+            }
+            .item4{
+              background-color: lightblue;
+              text-align: left;
+              padding: 20px 0;
+            }
+            .item5{
+              background-color: lightblue;
+              text-align: center;
+              padding: 20px 0;
+            }
+            .item6{
+              background-color: lightblue;
+              padding: 20px 0;
+            }
+        </style>
+    </head>
+    <body style="background-color:lightblue">
+        <div class="grid-container">
+            <div class="item1">
+                <h1>Bangkok
+                    <br>
+                    <img src="images/bangkok.png">
+                    <br>
+                </h1>
+            </div>
+            <div class="item2">
+                <div class="flex-nav">
+                    <nav>
+                        <div>
+                            <a href=index.html><i class="material-icons">check_circle </i>Introdução|</a>
+                        <a href=local.html><i class="material-icons">explore </i>Localização|</a>
+                        <a  href=multimedia.html><i class="material-icons">fit_screen </i>Multimédia|</a>
+                        <a href=info.html><i class="material-icons">info </i>Informações|</a>
+                        </div>
+                        <div>
+                            <a href=quizz.html><i class="material-icons">upcoming </i>Quizz|</a>
+                        <a href=comentarios.html><i class="material-icons">feedback </i>Comentários|</a>
+                        <a href=html5-css.html><i class="material-icons">laptop </i>HTML5|</a> 
+                        </div>
+                        <div>
+                            <a href=../index.html><i class="material-icons">home </i>Home</a>
+                        </div>
+                        
+    
+                        
+                    
+                    </nav>
+                </div>
+            </div>
+     <div class="item3">
+        <main>
+            <section>
+                <h3>Localização </h3>
+        <p> A cidade de Bangkok é a capital da Tailândia e esta fica localizada no sudeste asiático. A cidade é famosa por sua vida noturna e pelos santuários ornamentados.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248057.18773112874!2d100.49302611297256!3d13.724893621036056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d6032280d61f3%3A0x10100b25de24820!2sBangkok%2C%20Tail%C3%A2ndia!5e0!3m2!1spt-PT!2spt!4v1614174862021!5m2!1spt-PT!2spt" width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <br>
+            </section>
+            <section>
+                <svg width="1200" height="720">
+                    <image href="images/mapa.png" ></image>
+            
+                    <a href="images/don.jfif" target="name">
+                        <polygon opacity="0.6" points="287,113,296,118,329,79,312,69">
+                    </a>
+            
+                    <a href="images/bencha.jfif" target="name">
+                        <polygon opacity="0.6" points="259,272,302,285,293,327,257,315">
+                    </a>
+            
+                    <a href="images/wat.jfif" target="name">
+                        <polygon opacity="0.6" points="219,215,199,244,218,265,230,222">
+                    </a>
+                </svg>
+                <iframe name="name" width="1200" height="720">
+                   
+                </iframe>
+                <br>
+                <svg width="300" height="225">
+                    <a href="index.html">
+                    <text x="100" y="100" fill="blue">Introdução </text>
+                    </a>
+                    <a href="local.html">
+                        <text x="200" y="100" fill="blue">Localização </text>
+                        </a>
+                        <a href="multimedia.html">
+                            <text x="200" y="200" fill="blue">Multimédia </text>
+                            </a>
+                            <a href="info.html">
+                                <text x="0" y="200" fill="#000099">Informações </text>
+                                </a>
+                                <a href="quizz.html">
+                                    <text x="0" y="100" fill="blue">Quizz </text>
+                                    </a>
+                                    <a href="comentarios.html">
+                                        <text x="10" y="150" fill="blue">Comentários </text>
+                                        </a>
+                                        <a href="../index.html">
+                                            <text x="140" y="130" fill="#4d0099" transform="rotate(30 100,100)">Home </text>
+                                            </a>
+            
+                </svg>
+            </section>
+        </main>
+     </div>
+        <div class="item4">
+            <aside>
+                <img src="images/street.jpg">
+                <img src="images/street2.jpg">
+              </aside>
+        </div>
+        <div class="item5">
+            <aside>
+                <h5>Viver em Bangkok</h5>
+                <p>Sendo que existe uma grande diferença entre viver e visitar a cidade, irei descrever a experiencia de viver em Bangkok tendo por base os testemunhos de alguns portugueses. <br>
+                Segundo o website "Alma de Viajante"  <a href="https://www.almadeviajante.com/" >[1]  </a> a cidade consegue oferecer excelentes condições, uma qualidade de vida superior a certos paises europeus <br>
+                e um clima muito bom. As pessoas geralmente são atenciosas e simpáticas e as regras sociais são fáceis de atender. Em termos de despesas a cidade é considerada barata ( comparada com paises europeus) <br>
+                pois facilmente se consegue uma refeição na rua por 1€ e o alojamento e transportes são baratos ( a excepção dos famosos "Tuk-Tuk").     </p>
+              </aside>
+        </div>
+        <div class="item6">
+            <footer>
+                <p>Afonso Colaço a21802411  Universidade Lusófona de Humanidades e Tecnologias 3º ano</p>
+            </footer>
+        </div>
+        </div>
+    </body>
+</html>

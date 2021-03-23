@@ -1,0 +1,173 @@
+
+nav a:visited {
+    color: darkblue;
+}
+nav a:hover {
+    color: black;
+}
+
+nav a::before {
+    content: "-";
+}
+
+nav a::after {
+    content: "-";
+}
+body {
+    background-color: lightblue;
+}
+
+footer {
+    color: mediumblue;
+}
+
+h1 {
+    color: mediumblue;
+}
+
+h2 {
+    color: darkblue;
+}
+
+h3 {
+    color: darkblue;
+}
+
+h5 {
+    color: darkblue;
+}
+
+thead {
+    color: mediumblue;
+}
+
+table {
+    width: 30%;
+    border: 1px solid black;
+
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+th{
+    border: 1px solid black;
+}
+
+td{
+    border: 1px solid black;
+}
+
+p::first-line{
+    color: darkblue;
+}
+
+p::first-letter{
+    font-size: 150%;
+}
+
+input{
+    display: block;
+}
+
+label {
+    display: block;
+}
+
+iframe{
+    border: none;
+    border-radius: 6px;
+}
+
+img{
+    border-radius: 6px;
+}
+.plu{
+    position: sticky;
+    border-radius: 30%;
+    margin-left: 1100px;
+    top: 0;
+}
+
+.templo{
+    margin-left: 1100px;
+    position: fixed;
+    z-index: 1;
+    top: 600px;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.img12{
+    transition: filter 3s, transform 3s;
+}
+.img12:hover {
+    filter: invert(2px);
+    transform: scale(0.5,2);
+}
+.img13{
+    transition: filter 3s, transform 3s;
+}
+.img13:hover {
+    filter: sepia(2px);
+    transform: scale(0.5,3);
+
+}
+.img22{
+    transition: transform 3s;
+}
+.img22:hover {
+    transform: rotate(0.5turn);
+}
+.img23{
+    transition: transform 3s;
+}
+.img23:hover {
+    transform: skew(40deg,20deg);
+}
+
+.img32{
+    transition: transform 3s;
+}
+.img32:hover {
+    transform: rotate(0.8turn);
+}
+
+.img33{
+    transition: transform 3s;
+}
+.img33:hover {
+    transform: rotate(0.2turn);
+}
+
+.img42{
+    transition: transform 3s;
+}
+.img42:hover {
+    transform: scale(0.5) translate(-100%, -100%);
+}
+.img43{
+    transition: transform 3s;
+}
+.img43:hover {
+    transform: translate(140px, 40%);
+}
+
+@keyframes tuktukmov {
+    from {transform: translateX(500px);}
+    to {transform: translateX(0px); transform: scaleX(-1);}
+}
+
+.tuktukmove{
+    animation: tuktukmov 4s;
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Afonso Colaço">
+        <meta name="keywords" content="Bangkok">
+        <meta name="description" content="Website sobre Bangkok">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Bangkok</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="estilos.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <style>
+            h1{
+                font-family: "Nunito";
+            }
+            *{
+              font-family: "Roboto";
+            }
+            main{
+                font-family: "Nunito";
+            }
+            
+            a[target=_blank] {
+              background-color: teal;
+            }
+            [class|= prim] {
+              background-color: white;
+            }
+            [class^="material"] {
+              color: darkblue;
+            }
+            [class$="cons"]{
+              color: darkblue;
+            }
+
+            [class*="oda"] {
+              color: darkblue;
+            }
+            .item1 {grid-area: header;}
+            .item2 {grid-area: nav;}
+            .item3 {grid-area: main;}
+            .item4 {grid-area: aside;}
+            .item5 {grid-area: aside2}
+            .item6 {grid-area: footer}
+            .grid-container {
+              display: grid;
+              grid-template-areas: 
+              'header header header'
+              'nav nav nav'
+              'main main main'
+              'aside aside2 aside2'
+              'footer footer footer';
+              grid-gap: 10px;
+              background-color: lightblue;
+              padding: 10px;
+            }
+            .item1 {
+              background-color: lightblue;
+              text-align: center;
+              padding: 20px 0;
+            }
+            .item2{
+              background-color: lightblue;
+              text-align: center;
+              padding: 20px 0;
+            }
+            .item3{
+              background-color: lightblue;
+              text-align: center;
+              padding: 20px 0;
+            }
+            .item4{
+              background-color: lightblue;
+              text-align: left;
+              
+            }
+            .item5{
+              background-color: lightblue;
+              text-align: left;
+              padding: 40px 0;
+            }
+            .item6{
+              background-color: lightblue;
+              text-align: center;
+              padding: 20px 0;
+            }
+            .flex-nav {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="grid-container">
+        <div class="item1">
+          <h1>Bangkok
+            <br>
+            <img src="images/bangkok.png">
+            <br>
+        </h1>
+        </div>
+        <div class="item2">
+          <div class="flex-nav">
+            <nav>
+                <div>
+                    <a href=index.html><i class="material-icons">check_circle </i>Introdução|</a>
+                <a href=local.html><i class="material-icons">explore </i>Localização|</a>
+                <a  href=multimedia.html><i class="material-icons">fit_screen </i>Multimédia|</a>
+                <a href=info.html><i class="material-icons">info </i>Informações|</a>
+                </div>
+                <div>
+                    <a href=quizz.html><i class="material-icons">upcoming </i>Quizz|</a>
+                <a href=comentarios.html><i class="material-icons">feedback </i>Comentários|</a>
+                <a href=html5-css.html><i class="material-icons">laptop </i>HTML5|</a> 
+                </div>
+                <div>
+                    <a href=../index.html><i class="material-icons">home </i>Home</a>
+                </div>
+                
+
+                
+            
+            </nav>
+        </div>
+        </div>
+      
+        <div class="item3">
+          <main>
+            <section>
+                <p class="prim">HTML5 é uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet, originalmente proposto por Opera Software</p>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Elemento HTML5</th>
+                        <th>Icon</th>
+                        <th>Descrição</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>header</td>
+                        <td><i class="material-icons">check_circle </i></td>
+                        <td>Cabeçalho</td>
+                      </tr>
+                      <tr>
+                        <td>nav</td>
+                        <td><i class="material-icons">check_circle </i></td>
+                        <td>Menu de Navegação</td>
+                      </tr>
+                      <tr>
+                        <td>main</td>
+                        <td><i class="material-icons">check_circle </i></td>
+                        <td>Conteúdo Principal</td>
+                      </tr>
+                      <tr>
+                        <td>article</td>
+                        <td><i class="material-icons">clear </i></td>
+                        <td>Porção Doc</td>
+                      </tr>
+                      <tr>
+                        <td>section</td>
+                        <td><i class="material-icons">check_circle </i></td>
+                        <td>Porção do Conteúdo</td>
+                      </tr>
+                      <tr>
+                        <td>aside</td>
+                        <td><i class="material-icons">check_circle </i></td>
+                        <td>Anotações</td>
+                      </tr>
+                      <tr>
+                        <td>footer</td>
+                        <td><i class="material-icons">check_circle </i></td>
+                        <td>Rodapé</td>
+                      </tr>
+                      <tr>
+                        <td>details</td>
+                        <td><i class="material-icons">clear </i></td>
+                        <td>Detalhes</td>
+                      </tr>
+                      <tr>
+                        <td>meter</td>
+                        <td><i class="material-icons">clear </i></td>
+                        <td>Medida Escalar</td>
+                      </tr>
+                      <tr>
+                        <td>progress</td>
+                        <td><i class="material-icons">clear </i></td>
+                        <td>Barra Progresso</td>
+                      </tr>
+                      <tr>
+                        <td>abbr</td>
+                        <td><i class="material-icons">clear </i></td>
+                        <td>Significado de uma abreviatura</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>address</td>
+                        <td><i class="material-icons">clear </i></td>
+                        <td>Contactos</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <br>
+            </section>
+  
+            <section>
+                <h2>CSS</h2>
+                <p>Um mecanismo para adicionar estilo a um documento web</p>
+                <table>
+                    <thead>
+                        <tr>
+                          <th>Selector CSS</th>
+                          <th>Icon</th>
+                          <th>Descrição</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>universal</td>
+                          <td><i class="material-icons">check_circle </i></td>
+                          <td>Todos os elementos da página</td>
+                        </tr>
+                        <tr>
+                          <td>tipo</td>
+                          <td><i class="material-icons">check_circle </i></td>
+                          <td>Nome do marcador a estilizar</td>
+                        </tr>
+                        <tr>
+                          <td>classe</td>
+                          <td><i class="material-icons">check_circle </i></td>
+                          <td>Nome a um estilo</td>
+                        </tr>
+                        <tr>
+                            <td>id</td>
+                            <td><i class="material-icons">check_circle </i></td>
+                            <td>Identificador</td>
+                          </tr>
+                          <tr>
+                            <td>atributo</td>
+                            <td><i class="material-icons">check_circle </i></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>pseudo-classe</td>
+                            <td><i class="material-icons">check_circle </i></td>
+                            <td>estado de um elemento</td>
+                          </tr>
+                        <tfoot>
+                            <tr>
+                              <td>pseudo-elemento</td>
+                              <td><i class="material-icons">check_circle </i></td>
+                              <td>Usado no Multimédia</td>
+                            </tr>
+                          </tfoot>
+                </table>
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                          <th>Combinadores de Seletores</th>
+                          <th>Icon</th>
+                          <th>Descrição</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Descendentes</td>
+                          <td><i class="material-icons">check_circle </i></td>
+                          <td>Usado no menu de navegação</td>
+                        </tr>
+                        <tr>
+                          <td>Filhos</td>
+                          <td><i class="material-icons">clear </i></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Adjacentes</td>
+                          <td><i class="material-icons">clear </i></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                            <td>Imediatamente Adjacentes</td>
+                            <td><i class="material-icons">clear </i></td>
+                            <td></td>
+                          </tr>
+                        <tfoot>
+                            <tr>
+                              <td>Agrupar</td>
+                              <td><i class="material-icons">clear </i></td>
+                              <td></td>
+                            </tr>
+                          </tfoot>
+                </table>
+            </section> 
+        </main>
+        </div>
+      
+        <div class="aside">
+        <aside class="extra">
+          <img src="images/street.jpg">
+          <br>
+          <img src="images/street2.jpg">
+        </aside>
+        </div>
+        <div class="aside2">
+          <aside>
+            <h5>Viver em Bangkok</h5>
+            <p>Sendo que existe uma grande diferença entre viver e visitar a cidade, irei descrever a experiencia de viver em Bangkok tendo por base os testemunhos de alguns portugueses. <br>
+            Segundo o website "Alma de Viajante"  <a href="https://www.almadeviajante.com/" >[1]  </a> a cidade consegue oferecer excelentes condições, uma qualidade de vida superior a certos paises europeus <br>
+            e um clima muito bom. As pessoas geralmente são atenciosas e simpáticas e as regras sociais são fáceis de atender. Em termos de despesas a cidade é considerada barata ( comparada com paises europeus) <br>
+            pois facilmente se consegue uma refeição na rua por 1€ e o alojamento e transportes são baratos ( a excepção dos famosos "Tuk-Tuk").     </p>
+              <br>
+          </aside>
+          </div>
+        <div class="footer">
+          <footer class="rodape">
+            <p>Afonso Colaço a21802411  Universidade Lusófona de Humanidades e Tecnologias 3º ano</p>
+        </footer>
+        </div>
+        
+      </div>
+    </body>
+</html>
